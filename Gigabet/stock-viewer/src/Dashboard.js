@@ -7,15 +7,15 @@ import { Info } from "./Info";
 export const Dashboard = () => {
   const [data, setData] = useState([]);
   const url =
-    "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&apikey=X8ZEQ42643K2MTON";
+    "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=X8ZEQ42643K2MTON";
 
   useEffect(() => {
     const fetchInfo = async () => {
       try {
         const response = await fetch(url);
         const result = await response.json();
-        setData(result["Time Series (Daily)"]);
-        // console.log(result['Time Series (Daily)']);
+        setData(result["Time Series (5min)"]);
+        console.log(result['Time Series (5min)']);
         // console.log(data);
       } catch (error) {
         console.error(error);

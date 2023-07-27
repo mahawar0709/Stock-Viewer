@@ -9,7 +9,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
-// import { SendMessages } from "./SendMessages";
+import { SendMessages } from "./SendMessages";
 function App() {
   const [user, setUser] = useState({});
   const [state, setState] =useState(1);
@@ -41,7 +41,33 @@ function App() {
 
   return (
     <>
-      {state===1 && <div
+      {state===1 && 
+      
+    //   <div className="login">
+    //   <div className="loginWrapper">
+    //     <div className="loginLeft">
+    //       <h3 className="loginLogo">StockByte</h3>
+    //       <span className="loginDesc">
+    //         Fetch stock details and send around the world on StockByte
+    //       </span>
+    //     </div>
+    //     <div className="loginRight">
+    //       <div className="loginBox" >
+    //         <span className="loginForgot">Sign In using your google account</span>
+    //         <div
+    //          style={{
+    //            display: "flex",
+    //            justifyContent: "center",
+    //            alignItems: "center",
+    //          }}
+    //          id="signInDiv"
+    //        ></div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+
+      <div
        
        style={{
          display: "flex",
